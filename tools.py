@@ -271,7 +271,7 @@ def generate_shortenedUrl(
     try:
         uid = str(uuid.uuid4())
         data = requests.get(
-            "https://publicearn.com/api",
+            "http://sharedisklinks.com/api",
             params={
                 "api": PUBLIC_EARN_API,
                 "url": f"https://t.me/{BOT_USERNAME}?start=token_{uid}",
